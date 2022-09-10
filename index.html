@@ -13,6 +13,20 @@
             justify-content: space-between;
             gap: 5px;
         }
+
+        #videos{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 1000px) {
+            #videos {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
     </style>
 </head>
 
@@ -119,7 +133,7 @@
                             produzir metanfetamina de alta pureza com seu ex-aluno, Jesse Pinkman.</p>
                     </div>
                     <div class="col-md-5">
-                        <img class="bd-placeholder-img rounded-circle" width="500" height="500"
+                        <img class="bd-placeholder-img rounded-circle" width="350" height="350"
                             src="./public/breakingBadQuadrado.png" />
 
 
@@ -143,7 +157,7 @@
                             oito episódios.</p>
                     </div>
                     <div class="col-md-6 order-md-1">
-                        <img class="bd-placeholder-img rounded-circle" width="500" height="500"
+                        <img class="bd-placeholder-img rounded-circle" width="350" height="350"
                             src="./public/houseOfCardsQuadrado.jpg" />
 
                     </div>
@@ -165,7 +179,7 @@
                             de Westeros.[3]</p>
                     </div>
                     <div class="col-md-5">
-                        <img class="bd-placeholder-img rounded-circle" width="500" height="500"
+                        <img class="bd-placeholder-img rounded-circle" width="350" height="350"
                             src="./public/houseOfDragonsQuadrado.jpg" />
 
                     </div>
@@ -175,17 +189,26 @@
             </div>
 
             <div id="videos" style="margin-bottom: 100px; margin-top: 100px;">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <iframe src="https://www.youtube.com/embed/2-W6_6gJda0" title="Breaking Bad - Trailer Legendado (SPOILER ALERT)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-4">
-                        <iframe src="https://www.youtube.com/embed/8QnMmpfKWvo" title="House of Cards | Series Trailer [HD] | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-4">
-                        <iframe src="https://www.youtube.com/embed/DotnJ7tTA34" title="House of the Dragon | Official Trailer | HBO Max" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                <div class="col-sm-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/2-W6_6gJda0"
+                        title="Breaking Bad - Trailer Legendado (SPOILER ALERT)" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
+                <div class="col-sm-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/8QnMmpfKWvo"
+                        title="House of Cards | Series Trailer [HD] | Netflix" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <iframe src="https://www.youtube.com/embed/DotnJ7tTA34"
+                        title="House of the Dragon | Official Trailer | HBO Max" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+
             </div>
             <!-- /END THE FEATURETTES -->
 
